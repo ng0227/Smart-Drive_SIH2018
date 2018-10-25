@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.techhive.smartdrive.Activities.DirectionsActivity">
+
+    <LinearLayout
+        android:id="@+id/from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/from_label"
+            android:text="from"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:textColor="?android:textColorSecondary"
+            android:layout_margin="5dp"/>
+
+        <fragment
+            android:id="@+id/place_autocomplete_fragment_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/from">
+
+        <TextView
+            android:id="@+id/to_label"
+            android:text="to"
+            android:layout_below="@id/place_autocomplete_fragment_from"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:textColor="?android:textColorSecondary"
+            android:layout_margin="5dp"/>
+
+        <fragment
+            android:id="@+id/place_autocomplete_fragment_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/to_label"
+            android:layout_margin="10dp"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            />
+
+
+    </LinearLayout>
+
+
+   <!-- <AutoCompleteTextView
+        android:id="@+id/from"
+        android:layout_below="@id/from_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingBottom="10dp"
+        android:hint="Enter Address, City or Zip Code"/>-->
+
+
+    <!---->
+
+  <!--  <AutoCompleteTextView
+        android:id="@+id/to"
+        android:layout_below="@id/to_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Enter Address, City or Zip Code"/>
+-->
+
+
+
+    <Button
+        android:id="@+id/load_directions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/to"
+        android:text="Load Directions"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

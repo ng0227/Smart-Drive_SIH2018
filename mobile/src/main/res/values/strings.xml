@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SmartDrive</string>
+    <string name="loading">Loading…</string>
+    <string name="log_error_occurred">"Error occurred: "</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="send_to">Share</string>
+    <string name="noti_id">0</string>
+    <string name="noti_id2">1</string>
+
+    <string name="google_places_api_key">AIzaSyCXqG6BcCVYwsRXzW2FPVhYTaY18fQJYpo</string>
+
+
+</resources>

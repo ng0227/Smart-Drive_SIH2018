@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.techhive.smartdrive.Problems.ReportProblemActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:padding="5dp"
+                android:text=" Email: "
+                android:textColor="@color/lightboundary"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/report_problem_email_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="60"
+                android:padding="5dp"
+                android:text=" example@gmail.com "
+                android:textColor="@color/lightboundary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/lightboundary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:weightSum="100">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:padding="5dp"
+                android:text=" NH Number: "
+                android:textColor="@color/lightboundary"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/report_problem_highway_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawablePadding="5dp"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:hint=" 0 "
+                android:inputType="phone"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White"
+                android:textSize="25dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/lightboundary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:weightSum="100">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:padding="5dp"
+                android:text=" Problem Category: "
+                android:textColor="@color/lightboundary"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/report_problem_problem_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="40"
+                android:padding="5dp"
+                android:text="0 "
+                android:textColor="@color/lightboundary"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/lightboundary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:weightSum="100">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="70"
+                android:text=" Problem level: "
+                android:textColor="@color/lightboundary"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/report_problem_problem_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="   0 "
+                android:textColor="@color/lightboundary"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/lightboundary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:weightSum="100">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="100"
+                android:weightSum="100">
+                <RadioButton
+                    android:id="@+id/report_problem_auto_location_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/lightboundary"
+                    android:text="Auto Location"
+                    android:layout_weight="50"/>
+                <RadioButton
+                    android:id="@+id/report_problem_set_location_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/lightboundary"
+                    android:text="Set Location"
+                    android:layout_weight="50"/>
+            </RadioGroup>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/lightboundary" />
+
+        <LinearLayout
+            android:id="@+id/report_problem_cordinates_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:padding="15dp">
+            <EditText
+                android:id="@+id/report_problem_logitude_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:padding="5dp"
+                android:hint="25.568425"
+                android:textColor="@color/lightboundary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/report_problem_latitude_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="50"
+                android:padding="5dp"
+                android:hint="78.254871"
+                android:textColor="@color/lightboundary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="0dp">
+                <Button
+                    android:id="@+id/report_problem_last_location_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Load Last Saved Location"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/loginbutton_selector"
+                    android:padding="3dp"
+                    android:textColor="@color/darkboundary"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/lightboundary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:padding="15dp">
+            <Button
+                android:id="@+id/report_problem_image_upload_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attach Image"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/loginbutton_selector"
+                android:padding="3dp"
+                android:textColor="@color/darkboundary"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/lightboundary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:padding="5dp">
+            <EditText
+                android:id="@+id/report_problem_description_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Add Description of problem and suggestions"
+                android:inputType="textCapWords|textMultiLine"
+                android:padding="10dp"
+                android:lines="5"
+                android:minLines="3"
+                android:maxLines="8"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/lightboundary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:padding="5dp">
+            <Button
+                android:id="@+id/report_problem_submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit Report"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/loginbutton_selector"
+                android:padding="3dp"
+                android:textColor="@color/darkboundary"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

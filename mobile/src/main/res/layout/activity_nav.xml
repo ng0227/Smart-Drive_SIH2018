@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--Created by Sunain Mittal on 1/1/2018.-->
+<android.support.v4.widget.DrawerLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/drawer"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+tools:openDrawer="start"
+tools:context="com.techhive.smartdrive.Activities.NavActivity">
+
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:title="hello tring new"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+<FrameLayout
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--<fragment-->
+        <!--android:id="@+id/googleMap"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+        <!--/>-->
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/content_main" />
+    <com.dekoservidoni.omfm.OneMoreFabMenu
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:content_options="@menu/omfm_content_options"
+        app:close_on_click="true"
+        app:color_main_button="@color/colorPrimaryDark"
+        app:color_secondary_buttons="@color/colorPrimary"
+        app:expanded_background_color="@color/omfm_expanded_background_sample"
+        app:rotate_main_button="true"
+        app:size_main_button="@integer/omfm_fab_size_normal"
+        app:size_secondary_buttons="@integer/omfm_fab_size_mini"
+        app:label_text_color="@color/colorPrimary"
+        app:enable_main_as_action="true"
+        app:main_action_drawable="@drawable/ic_add_white_24px"/>
+</FrameLayout>
+<android.support.design.widget.NavigationView
+    android:id="@+id/navigation_view"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_gravity="start"
+    app:headerLayout="@layout/nav_header"
+    app:menu="@menu/menu_navigation"/>
+
+
+</android.support.v4.widget.DrawerLayout>

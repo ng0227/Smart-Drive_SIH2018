@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="horizontal"
+    android:weightSum="100" >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="40"
+    android:gravity="center">
+
+    <ProgressBar
+        android:layout_margin="2dp"
+        android:id="@+id/alertprogressBarCircle"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/progressbar_circle_dark"
+        android:indeterminate="false"
+        android:max="20"
+        android:progress="20"
+        android:progressDrawable="@drawable/progressbar_circle_yellow"
+        android:rotation="-90" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/alerttextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="FlashLightOn"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="20">
+    <Button
+        android:id="@+id/Alertcancelbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="STOP" />
+</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by Sunain Mittal on 1/1/2018.-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/main_menu">
+        <item
+            android:id="@+id/Profile"
+            android:title="Profile"
+            android:icon="@mipmap/ic_launcher"/>
+        <item
+            android:id="@+id/Contact"
+            android:title="Contacts"
+            android:icon="@mipmap/ic_launcher"/>
+    </group>
+    <group
+        android:id="@+id/hospital_feature"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/Near_Hospital"
+            android:title="Near By Hospitals"
+            android:icon="@mipmap/ic_launcher"/>
+    </group>
+    <group
+        android:id="@+id/main_feature"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/highway_details"
+            android:title="Highway details"
+            android:icon="@mipmap/ic_launcher"/>
+        <item
+            android:id="@+id/report_problem"
+            android:title="Report Queries"
+            android:icon="@mipmap/ic_launcher"/>
+        <item
+            android:id="@+id/track_problem"
+            android:title="Track Reported Queries"
+            android:icon="@mipmap/ic_launcher"/>
+
+    </group>
+
+    <group
+        android:id="@+id/legal_button"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/drawer_item_settings"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Setting" >
+        </item>
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@mipmap/ic_launcher">
+        </item>
+    </group>
+</menu>

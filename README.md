@@ -25,3 +25,9 @@ SmartDrive will not only alert users about accident but also guide users but wil
 Using app user can click picture of problem like Bad Condition of Roads, Unauthorized Median Cut etc. with details and category then upload it on server for authority. Road user will be notified about development on issue by authorities. If a problem of same type is reported for more than 5 times then the spot will be marked on map for all
 users to notice and will only be unmarked if authority post pictures with details to fix problem on web portal and no report by users for 1 week.
 
+
+
+#### Screenshots
+![](readme_Images/SmartDrive_SIH_logo.png)
+
+
